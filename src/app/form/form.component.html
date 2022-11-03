@@ -1,0 +1,29 @@
+<form [formGroup]="userForm">
+    <p>
+      <mat-form-field appearance="legacy">
+            <mat-label>First Name</mat-label>
+            <input matInput placeholder="First Name" name="firstName" formControlName="firstName">
+      </mat-form-field>
+    </p>
+    <p>
+      <mat-form-field appearance="legacy">
+            <mat-label>Last Name</mat-label>
+            <input matInput placeholder="Last Name" name="lastName" formControlName="lastName">
+      </mat-form-field>
+    </p>
+    <p>
+        <mat-form-field appearance="legacy">
+            <mat-label>CNH</mat-label>
+            <input matInput placeholder="CNH" name="CNH" formControlName="CNH">
+      </mat-form-field>
+    </p>
+    <p>
+        <button matButton (click)="setValue()">
+            ENVIAR
+        </button>
+    </p>  
+</form>
+
+<h1>{{firstName}}</h1>
+<h1>{{lastName}}</h1>
+<h1>{{CNH}}</h1>
